@@ -73,7 +73,7 @@ def home():
 @app.post("/predict", response_model=PredictionResponse)
 async def predict(file: UploadFile = File(...)):
     """
-    Upload an image and predict tumor type.
+    upload images of brain XRAY it will predict TUMOR category
     """
     # Validate file type
     if not file.content_type.startswith("image/"):

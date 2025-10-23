@@ -6,6 +6,7 @@ from tensorflow.keras.models import load_model
 from keras.preprocessing.image import load_img, img_to_array
 import numpy as np
 import os
+import pandas as pd
 from pathlib import Path
 
 # Initialize FastAPI app
